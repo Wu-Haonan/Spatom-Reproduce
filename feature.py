@@ -92,7 +92,10 @@ def feature_Adj(data_list,label,mode):
         Datasets.append(data)
     f = open('./Data/DBD/data/feature_extract/'+mode+'_feature.pkl', 'wb')
     pickle.dump(Datasets, f)
-
+    
+path_dir = "./Data/DBD/data/feature_extract/"
+if not os.path.exists(path_dir):
+    os.makedirs(path_dir)
 feature_Adj(test_data,all_data_label, 'test')
 feature_Adj(train_data,all_data_label,'train')
 
