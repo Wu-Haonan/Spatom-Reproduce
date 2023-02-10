@@ -35,9 +35,9 @@ cuda 10.2
 
 # Usage
 
-We provide training and testing protein PDB files (stored in path_to_Spatom-Reproducing/Data/DBD/data/pre_pdb) , PSSM files (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature/pssm), DSSP files (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature/dssp), raw features (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature_data), processed data (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature_extract), labels (stored in path_to_Spatom-Reproducing/Data/DBD/data/label_542.txt) of each protein and pretrained model (/home/yuting/haonan/Spatom-Reproduce/result/model) for users to reproducing the results in this paper.
+We provide training and testing protein PDB files (stored in path_to_Spatom-Reproducing/Data/DBD/data/pre_pdb) , PSSM files (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature/pssm), DSSP files (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature/dssp), labels (stored in path_to_Spatom-Reproducing/Data/DBD/data/label_542.txt) of each protein and pretrained model (/home/yuting/haonan/Spatom-Reproduce/result/model) for users to reproducing the results in this paper.
 
-Users can run feature_data.py to extract raw features, and run feature.py to generate processed data, and run train.py or test.py to train or test the model.
+Users can run feature_data.py to extract raw features (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature_data), and run feature.py to generate processed data (stored in path_to_Spatom-Reproducing/Data/DBD/data/feature_extract), and run train.py or test.py to train or test the model.
 
 # Dataset and feature data
 
