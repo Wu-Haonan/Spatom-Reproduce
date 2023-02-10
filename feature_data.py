@@ -248,7 +248,9 @@ def Dist_adj(data_list):
     f = open('./Data/DBD/data/feature_data/Dist_dict.pkl', 'wb')
     pickle.dump(distance_dict, f)
 
-
+path_dir = "./Data/DBD/data/feature_data/"
+if not os.path.exists(path_dir):
+    os.makedirs(path_dir)
 
 onehot_dict(test_list, fasta_dict)
 PSSM_dict(test_list)
