@@ -2,6 +2,7 @@ import torch
 from torch_geometric.data import Data
 import pickle
 import numpy as np
+import os
 
 
 onehot_dict = pickle.load(open('./Data/DBD/data/feature_data/One_hot_dict.pkl', 'rb'))

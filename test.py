@@ -8,7 +8,7 @@ import sklearn.metrics as skm
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(DEVICE)
 
-test_set = pickle.load(open('./Data/updata/feature_extract/' + 'test' + '_feature.pkl', 'rb'))
+test_set = pickle.load(open('./Data/DBD/data/feature_extract/' + 'test' + '_feature.pkl', 'rb'))
 
 
 def best_f_1(label, output):
